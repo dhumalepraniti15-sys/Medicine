@@ -1,0 +1,802 @@
+/* =========================================
+   REPORTS & ANALYTICS MAIN CONTAINER
+========================================= */
+
+.reports-page{
+
+    padding:30px;
+
+    background:#f6f8fc;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.title-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.title-left h2{
+
+    color:#1e3a8a;
+
+    font-size:30px;
+
+    margin:0;
+
+}
+
+
+
+.title-left p{
+
+    color:#64748b;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+
+
+/* Export Button */
+
+
+.export-btn,
+.export-btn-small{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+
+    padding:12px 22px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+.export-btn:hover,
+.export-btn-small:hover{
+
+
+    background:#1d4ed8;
+
+
+}
+
+
+
+/* =========================================
+   REPORT CARD
+========================================= */
+
+
+.report-card,
+.reports-card{
+
+
+    background:#ffffff;
+
+
+    padding:25px;
+
+
+    border-radius:18px;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.report-card h1,
+.reports-card h1{
+
+
+    color:#1e3a8a;
+
+
+    font-size:30px;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.report-card p,
+.reports-card p{
+
+
+    color:#64748b;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+/* =========================================
+   REPORT TITLE
+========================================= */
+
+
+.report-title{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.report-title h3{
+
+
+    color:#1e3a8a;
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+/* =========================================
+   SUMMARY GRID
+========================================= */
+
+
+.summary-grid,
+.report-summary{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+.summary-item,
+.report-box{
+
+
+    padding:22px;
+
+
+    border-radius:16px;
+
+
+    background:#f8fafc;
+
+
+    border:1px solid #e5e7eb;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.summary-item:hover,
+.report-box:hover{
+
+
+    transform:translateY(-5px);
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+.summary-item h4,
+.report-box h4{
+
+
+    color:#64748b;
+
+
+    font-size:14px;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.summary-item h2,
+.report-box h2{
+
+
+    color:#1e293b;
+
+
+    font-size:26px;
+
+
+}
+
+
+
+
+
+/* =========================================
+   ICON
+========================================= */
+
+
+.summary-icon{
+
+
+    width:55px;
+
+    height:55px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    border-radius:14px;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+/* =========================================
+   TABLE DESIGN
+========================================= */
+
+
+.table-wrapper{
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+.report-table{
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+    background:white;
+
+
+}
+
+
+
+.report-table th{
+
+
+    padding:15px;
+
+
+    background:#eff6ff;
+
+
+    color:#1e3a8a;
+
+
+    text-align:left;
+
+
+}
+
+
+
+.report-table td{
+
+
+    padding:15px;
+
+
+    border-bottom:1px solid #e5e7eb;
+
+
+    color:#334155;
+
+
+}
+
+
+
+.report-table tr:hover{
+
+
+    background:#f8fafc;
+
+
+}
+
+
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+
+.status{
+
+
+    padding:6px 14px;
+
+
+    border-radius:20px;
+
+
+    font-size:13px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.active{
+
+
+    background:#dcfce7;
+
+
+    color:#15803d;
+
+
+}
+
+
+
+.pending{
+
+
+    background:#fef3c7;
+
+
+    color:#d97706;
+
+
+}
+
+
+
+.paid{
+
+
+    background:#dbeafe;
+
+
+    color:#2563eb;
+
+
+}
+
+
+
+
+
+/* =========================================
+   REPORT CATEGORY COLORS
+========================================= */
+
+
+/* Pharmacy */
+
+
+.pharmacy-card{
+
+
+    background:#ecfdf5;
+
+
+    border:1px solid #bbf7d0;
+
+
+}
+
+
+.pharmacy-card h4{
+
+
+    color:#15803d;
+
+
+}
+
+
+.pharmacy-card h2{
+
+
+    color:#166534;
+
+
+}
+
+
+
+
+
+/* Vendor */
+
+
+.vendor-card{
+
+
+    background:#eff6ff;
+
+
+    border:1px solid #bfdbfe;
+
+
+}
+
+
+
+.vendor-card h4{
+
+
+    color:#2563eb;
+
+
+}
+
+
+.vendor-card h2{
+
+
+    color:#1e3a8a;
+
+
+}
+
+
+
+
+
+/* Procurement */
+
+
+.procurement-card{
+
+
+    background:#fff7ed;
+
+
+    border:1px solid #fed7aa;
+
+
+}
+
+
+.procurement-card h4{
+
+
+    color:#ea580c;
+
+
+}
+
+
+.procurement-card h2{
+
+
+    color:#c2410c;
+
+
+}
+
+
+
+
+
+/* Financial */
+
+
+.financial-card{
+
+
+    background:#f5f3ff;
+
+
+    border:1px solid #ddd6fe;
+
+
+}
+
+
+
+.financial-card h4{
+
+
+    color:#6d28d9;
+
+
+}
+
+
+
+.financial-card h2{
+
+
+    color:#5b21b6;
+
+
+}
+
+
+
+
+.financial-icon{
+
+
+    background:#7c3aed;
+
+
+    color:white;
+
+
+}
+
+
+
+
+/* =========================================
+   FINANCIAL REPORT SPECIAL
+========================================= */
+
+
+.reports-card .report-summary{
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+}
+
+
+.reports-card .report-box{
+
+
+    background:#f5f3ff;
+
+
+    border:1px solid #ddd6fe;
+
+
+}
+
+
+.reports-card .report-box h4{
+
+
+    color:#6d28d9;
+
+
+}
+
+
+.reports-card .report-box h2{
+
+
+    color:#5b21b6;
+
+
+}
+
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+
+@media(max-width:1100px){
+
+
+.summary-grid,
+.report-summary{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+
+.reports-page{
+
+
+    padding:15px;
+
+
+}
+
+
+
+.page-header{
+
+
+    flex-direction:column;
+
+
+    align-items:flex-start;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.summary-grid,
+.report-summary{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.export-btn,
+.export-btn-small{
+
+
+    width:100%;
+
+
+    justify-content:center;
+
+
+}
+
+
+
+.report-card,
+.reports-card{
+
+
+    padding:18px;
+
+
+}
+
+
+
+.report-table{
+
+
+    display:block;
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+}

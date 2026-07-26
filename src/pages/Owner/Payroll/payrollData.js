@@ -1,0 +1,141 @@
+import {
+  Users,
+  Wallet,
+  BadgeDollarSign,
+  CreditCard,
+  FileText,
+  PlayCircle,
+  FileSpreadsheet,
+  Upload,
+  Building2,
+  CalendarDays,
+  BarChart3,
+} from "lucide-react";
+
+export const summaryCards = [
+  {
+    id: 1,
+    title: "Total Employees",
+    value: "28",
+    subtitle: "Active Employees",
+    icon: Users,
+    color: "#2563eb",
+    bg: "#eff6ff",
+  },
+  {
+    id: 2,
+    title: "Total Payroll",
+    value: "₹7,85,000",
+    subtitle: "May 2025",
+    icon: Wallet,
+    color: "#16a34a",
+    bg: "#ecfdf5",
+  },
+  {
+    id: 3,
+    title: "Total Deductions",
+    value: "₹1,25,400",
+    subtitle: "May 2025",
+    icon: BadgeDollarSign,
+    color: "#ea580c",
+    bg: "#fff7ed",
+  },
+  {
+    id: 4,
+    title: "Net Payroll",
+    value: "₹6,59,600",
+    subtitle: "May 2025",
+    icon: CreditCard,
+    color: "#9333ea",
+    bg: "#faf5ff",
+  },
+  {
+    id: 5,
+    title: "Payslips Generated",
+    value: "25 / 28",
+    subtitle: "This Month",
+    icon: FileText,
+    color: "#0f766e",
+    bg: "#ecfeff",
+  },
+];
+
+export const payrollActions = [
+  {
+    title: "Run Payroll",
+    icon: PlayCircle,
+  },
+  {
+    title: "Generate Payslip",
+    icon: FileSpreadsheet,
+  },
+  {
+    title: "Bulk Import",
+    icon: Upload,
+  },
+  {
+    title: "Salary Structure",
+    icon: Building2,
+  },
+  {
+    title: "Attendance Import",
+    icon: CalendarDays,
+  },
+  {
+    title: "Payroll Reports",
+    icon: BarChart3,
+  },
+];
+
+export const employees = [
+  {
+    id: "EMP001",
+    name: "Amit Sharma",
+    department: "Pharmacy",
+    designation: "Pharmacist",
+    gross: "₹35,000",
+    deduction: "₹5,200",
+    net: "₹29,800",
+    status: "Processed",
+  },
+  {
+    id: "EMP002",
+    name: "Neha Verma",
+    department: "Reception",
+    designation: "Receptionist",
+    gross: "₹28,000",
+    deduction: "₹3,800",
+    net: "₹24,200",
+    status: "Processed",
+  },
+  {
+    id: "EMP003",
+    name: "Rohit Singh",
+    department: "Laboratory",
+    designation: "Lab Technician",
+    gross: "₹30,000",
+    deduction: "₹4,500",
+    net: "₹25,500",
+    status: "Processed",
+  },
+  {
+    id: "EMP004",
+    name: "Pooja Mehta",
+    department: "Nursing",
+    designation: "Staff Nurse",
+    gross: "₹32,000",
+    deduction: "₹4,700",
+    net: "₹27,300",
+    status: "Processed",
+  },
+  {
+    id: "EMP005",
+    name: "Suresh Patel",
+    department: "Administration",
+    designation: "Admin Executive",
+    gross: "₹26,000",
+    deduction: "₹3,600",
+    net: "₹22,400",
+    status: "Pending",
+  },
+];

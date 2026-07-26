@@ -1,0 +1,988 @@
+/* =========================================
+   MY PROFILE MAIN PAGE
+========================================= */
+
+
+.profile-page{
+
+    padding:30px;
+
+    background:#f6f8fc;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================================
+   PROFILE HEADER
+========================================= */
+
+
+.profile-header{
+
+    margin-bottom:30px;
+
+}
+
+
+
+.profile-header h1{
+
+    font-size:32px;
+
+    color:#1e3a8a;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.profile-header p{
+
+    color:#64748b;
+
+    font-size:15px;
+
+}
+
+
+
+/* =========================================
+   PROFILE LAYOUT
+========================================= */
+
+
+.profile-layout{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.left-profile{
+
+    height:max-content;
+
+}
+
+
+
+.right-profile{
+
+    width:100%;
+
+}
+
+
+
+
+
+/* =========================================
+   PROFILE CARD
+========================================= */
+
+
+.profile-card{
+
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+
+    box-shadow:
+    0 6px 18px rgba(0,0,0,.08);
+
+
+    transition:.3s;
+
+}
+
+
+
+.profile-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.profile-image{
+
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+
+    border:5px solid #dbeafe;
+
+
+    margin-bottom:15px;
+
+}
+
+
+
+.profile-card h2{
+
+    color:#1e3a8a;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.profile-card p{
+
+    color:#64748b;
+
+}
+
+
+
+/* Edit Button */
+
+
+.edit-btn{
+
+
+    margin-top:15px;
+
+
+    padding:12px 25px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.edit-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+
+
+/* =========================================
+   COMMON CARD DESIGN
+========================================= */
+
+
+.info-card,
+.password-card,
+.notification-card,
+.logout-card{
+
+
+    background:white;
+
+
+    border-radius:18px;
+
+
+    padding:30px;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+/* =========================================
+   PERSONAL INFORMATION
+========================================= */
+
+
+.info-card h3{
+
+    color:#1e3a8a;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.info-grid{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:20px;
+
+
+}
+
+
+
+.info-grid label,
+.input-group label{
+
+
+    display:block;
+
+
+    color:#475569;
+
+
+    font-weight:600;
+
+
+    margin-bottom:8px;
+
+
+}
+
+
+
+
+.info-grid input,
+.password-input input{
+
+
+    width:100%;
+
+
+    padding:13px;
+
+
+    border:1px solid #cbd5e1;
+
+
+    border-radius:10px;
+
+
+    outline:none;
+
+
+    font-size:15px;
+
+
+    background:#f8fafc;
+
+
+}
+
+
+
+
+.info-grid input:focus,
+.password-input input:focus{
+
+
+    border-color:#2563eb;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+
+/* =========================================
+   CHANGE PASSWORD
+========================================= */
+
+
+.card-title,
+.notification-title{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+    color:#1e3a8a;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.password-form{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+}
+
+
+
+.password-input{
+
+
+    position:relative;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.password-input input{
+
+    padding-right:45px;
+
+}
+
+
+
+.password-input button{
+
+
+    position:absolute;
+
+
+    right:12px;
+
+
+    background:none;
+
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    color:#64748b;
+
+
+}
+
+
+
+
+
+.update-btn,
+.save-btn{
+
+
+    padding:12px 25px;
+
+
+    background:#2563eb;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.update-btn:hover,
+.save-btn:hover{
+
+
+    background:#1d4ed8;
+
+
+}
+
+
+
+
+
+/* =========================================
+   NOTIFICATIONS
+========================================= */
+
+
+.notification-list{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.notification-item{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    background:#f8fafc;
+
+
+    padding:18px;
+
+
+    border-radius:14px;
+
+
+}
+
+
+
+.notification-left{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.notification-icon{
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    border-radius:12px;
+
+
+    background:#dbeafe;
+
+
+    color:#2563eb;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.notification-left h4{
+
+
+    margin:0;
+
+
+    color:#1e293b;
+
+
+}
+
+
+
+.notification-left p{
+
+
+    margin:5px 0 0;
+
+
+    color:#64748b;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+/* =========================================
+   TOGGLE SWITCH
+========================================= */
+
+
+.switch{
+
+
+    width:50px;
+
+
+    height:25px;
+
+
+    position:relative;
+
+
+}
+
+
+
+.switch input{
+
+
+    display:none;
+
+
+}
+
+
+
+.slider{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:#cbd5e1;
+
+
+    border-radius:20px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.slider:before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:19px;
+
+
+    height:19px;
+
+
+    left:3px;
+
+
+    bottom:3px;
+
+
+    background:white;
+
+
+    border-radius:50%;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.switch input:checked + .slider{
+
+
+    background:#2563eb;
+
+
+}
+
+
+
+.switch input:checked + .slider:before{
+
+
+    transform:translateX(25px);
+
+
+}
+
+
+
+
+
+.notification-footer{
+
+
+    margin-top:25px;
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.cancel-btn{
+
+
+    padding:12px 25px;
+
+
+    background:#e2e8f0;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+
+.logout-card{
+
+
+    text-align:center;
+
+
+}
+
+
+
+.logout-icon{
+
+
+    width:90px;
+
+
+    height:90px;
+
+
+    border-radius:50%;
+
+
+    background:#fee2e2;
+
+
+    color:#dc2626;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    margin:auto;
+
+
+}
+
+
+
+.logout-card h2{
+
+
+    color:#1e3a8a;
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+.logout-card p{
+
+
+    color:#64748b;
+
+
+}
+
+
+
+.logout-buttons{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:15px;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+.logout-btn{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    padding:12px 25px;
+
+
+    background:#dc2626;
+
+
+    color:white;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.logout-btn:hover{
+
+
+    background:#b91c1c;
+
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+
+@media(max-width:900px){
+
+
+.profile-layout{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.profile-page{
+
+
+    padding:15px;
+
+
+}
+
+
+
+.info-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.notification-item{
+
+
+    flex-direction:column;
+
+
+    align-items:flex-start;
+
+
+    gap:15px;
+
+
+}
+
+
+
+.notification-footer,
+.logout-buttons{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.update-btn,
+.save-btn,
+.cancel-btn,
+.logout-btn{
+
+
+    width:100%;
+
+
+    justify-content:center;
+
+
+}
+
+
+}

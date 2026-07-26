@@ -1,0 +1,37 @@
+.owner-layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#f5f7fb;
+
+}
+
+
+
+.owner-content{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    min-height:100vh;
+
+    padding:25px;
+
+}
+
+
+
+@media(max-width:768px){
+
+    .owner-content{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+}
