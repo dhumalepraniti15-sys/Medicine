@@ -22,7 +22,7 @@ const ledgerData = [
 
 {
 title:"Income Ledger",
-description:"Hospital income transactions",
+description:"Medical income transactions",
 icon:<Wallet/>,
 path:"/financial-ledger/income"
 },
