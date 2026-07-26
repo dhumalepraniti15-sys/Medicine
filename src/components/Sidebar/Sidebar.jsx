@@ -155,6 +155,41 @@ icon:<Wallet/>
 },
 
 
+{
+name:"Employee Salary",
+path:"/payroll/employee-salary",
+icon:<Users/>
+},
+
+
+{
+name:"Payslips",
+path:"/payroll/payslips",
+icon:<FileText/>
+},
+
+
+{
+name:"Deductions",
+path:"/payroll/deductions",
+icon:<Receipt/>
+},
+
+
+{
+name:"Bonus",
+path:"/payroll/bonus",
+icon:<IndianRupee/>
+},
+
+
+{
+name:"Salary Reports",
+path:"/payroll/salary-reports",
+icon:<BarChart3/>
+}
+
+
 ]
 
 },
