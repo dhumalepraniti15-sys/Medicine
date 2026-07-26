@@ -2,39 +2,38 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import Sidebar from "../components/Sidebar/Sidebar";
+import Navbar from "../components/Navbar/Navbar";
 
 import "./OwnerLayout.css";
 
-
 const OwnerLayout = () => {
 
+  return (
 
-    return (
+    <div className="owner-layout">
 
-        <div className="owner-layout">
+      {/* Sidebar */}
+      <Sidebar />
 
+      {/* Right Section */}
+      <div className="owner-main">
 
-            {/* Fixed Sidebar */}
+        {/* Top Navbar */}
+        <Navbar />
 
-            <Sidebar />
+        {/* Page Content */}
+        <main className="owner-content">
 
+          <Outlet />
 
+        </main>
 
-            {/* Page Content */}
+      </div>
 
-            <main className="owner-content">
+    </div>
 
-                <Outlet />
-
-            </main>
-
-
-        </div>
-
-    );
-
+  );
 
 };
-
 
 export default OwnerLayout;

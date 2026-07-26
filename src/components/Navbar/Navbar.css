@@ -1,0 +1,196 @@
+/* =====================================
+   TOP NAVBAR
+===================================== */
+
+.top-navbar{
+    position:fixed;
+    top:0;
+    left:280px;
+    right:0;
+
+    height:70px;
+
+    background:#ffffff;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:0 25px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+    z-index:999;
+
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+
+/* Hide Scrollbar */
+
+.top-navbar::-webkit-scrollbar{
+    display:none;
+}
+
+.top-navbar{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
+
+
+/* =====================================
+   NAVBAR LINKS
+===================================== */
+
+.top-navbar a{
+
+    text-decoration:none;
+
+    color:#475569;
+
+    background:#f8fafc;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:all .3s ease;
+
+    border:1px solid transparent;
+
+}
+
+
+/* Hover */
+
+.top-navbar a:hover{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    border-color:#93c5fd;
+
+}
+
+
+/* Active */
+
+.top-navbar a.nav-active{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    box-shadow:0 4px 12px rgba(37,99,235,.25);
+
+}
+
+
+/* =====================================
+   PAGE CONTENT
+===================================== */
+
+.page-content{
+
+    margin-left:280px;
+
+    margin-top:70px;
+
+    padding:25px;
+
+    min-height:calc(100vh - 70px);
+
+    background:#f8fafc;
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:1000px){
+
+.top-navbar{
+
+    left:240px;
+
+    padding:0 20px;
+
+}
+
+.page-content{
+
+    margin-left:240px;
+
+}
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+.top-navbar{
+
+    left:0;
+
+    padding:0 15px;
+
+}
+
+.page-content{
+
+    margin-left:0;
+
+}
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media(max-width:480px){
+
+.top-navbar{
+
+    height:60px;
+
+    gap:8px;
+
+    padding:0 10px;
+
+}
+
+.top-navbar a{
+
+    font-size:13px;
+
+    padding:8px 14px;
+
+}
+
+.page-content{
+
+    margin-top:60px;
+
+    padding:15px;
+
+}
+
+}

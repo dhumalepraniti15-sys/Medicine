@@ -158,7 +158,7 @@ element={<ProfitLoss/>}
 
 
 <Route
-path="/reports-analytics"
+path="/reports"
 element={<ReportsAnalytics/>}
 />
 

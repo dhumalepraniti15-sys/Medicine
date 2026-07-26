@@ -1,33 +1,80 @@
 import React from "react";
+import {
+  Settings,
+  Building2,
+  Shield,
+  Users,
+  Database,
+  ArrowRight
+} from "lucide-react";
 
+import "./Settings.css";
 
-const Settings =()=>{
+const settingsModules = [
+  {
+    title: "Company Profile",
+    description: "Manage hospital information, address, logo and contact details.",
+    icon: <Building2 size={32} />
+  },
+  {
+    title: "System Settings",
+    description: "Configure application preferences and general system options.",
+    icon: <Settings size={32} />
+  },
+  {
+    title: "Security",
+    description: "Manage passwords, authentication and security policies.",
+    icon: <Shield size={32} />
+  },
+  {
+    title: "Roles & Permissions",
+    description: "Control user roles and access permissions.",
+    icon: <Users size={32} />
+  },
+  {
+    title: "Backup",
+    description: "Create and restore database backups safely.",
+    icon: <Database size={32} />
+  }
+];
 
+const SettingsPage = () => {
+  return (
+    <div className="settings-page">
 
-return(
+      <div className="settings-header">
+        <h1>⚙ Settings</h1>
+        <p>
+          Configure your Medical Management System from one place.
+        </p>
+      </div>
 
-<div>
+      <div className="settings-grid">
 
-<h1>⚙ Settings</h1>
+        {settingsModules.map((item, index) => (
 
-<hr/>
+          <div className="settings-card" key={index}>
 
-<h3>Company Profile</h3>
+            <div className="settings-icon">
+              {item.icon}
+            </div>
 
-<h3>System Settings</h3>
+            <h3>{item.title}</h3>
 
-<h3>Security</h3>
+            <p>{item.description}</p>
 
-<h3>Roles & Permissions</h3>
+            <button>
+              Open 
+            </button>
 
-<h3>Backup</h3>
+          </div>
 
+        ))}
 
-</div>
+      </div>
 
-)
+    </div>
+  );
+};
 
-}
-
-
-export default Settings;
+export default SettingsPage;

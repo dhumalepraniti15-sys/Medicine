@@ -2,344 +2,197 @@
    SIDEBAR MAIN
 ===================================== */
 
-
 .sidebar{
-
     width:280px;
     height:100vh;
-
     background:#1e3a8a;
-
-    color:white;
-
+    color:#fff;
     position:fixed;
-
     top:0;
     left:0;
-
     padding:20px 15px;
-
     overflow-y:auto;
-
     box-shadow:4px 0 15px rgba(0,0,0,0.15);
-
     z-index:1000;
-
 }
-
 
 /* Scrollbar */
 
 .sidebar::-webkit-scrollbar{
-
     width:6px;
-
 }
-
 
 .sidebar::-webkit-scrollbar-thumb{
-
     background:#60a5fa;
-
     border-radius:10px;
-
 }
-
-
-
 
 
 /* =====================================
    LOGO SECTION
 ===================================== */
 
-
 .sidebar-logo{
-
     text-align:center;
-
     padding:10px 0 25px;
-
-    border-bottom:1px solid rgba(255,255,255,0.2);
-
-    margin-bottom:20px;
-
+    border-bottom:1px solid rgba(255,255,255,.2);
+    margin-bottom:30px;
 }
-
-
 
 .sidebar-logo h2{
-
-    font-size:22px;
-
-    font-weight:700;
-
     margin:0;
-
+    font-size:22px;
+    font-weight:700;
 }
-
-
 
 .sidebar-logo p{
-
     margin-top:8px;
-
     color:#bfdbfe;
-
     font-size:14px;
-
 }
 
 
-
-
-
-
 /* =====================================
-   MENU SECTION
+   MENU
 ===================================== */
-
 
 .sidebar-menu{
-
     display:flex;
-
     flex-direction:column;
-
+    gap:10px;
 }
-
-
-
-
-
-.menu-title{
-
-    margin:22px 10px 10px;
-
-    font-size:12px;
-
-    color:#93c5fd;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    font-weight:700;
-
-}
-
-
-
 
 
 /* =====================================
-   MENU LINKS
+   MENU LINK
 ===================================== */
 
-
 .sidebar-menu a{
-
     display:flex;
-
     align-items:center;
-
-    gap:12px;
-
-    padding:12px 15px;
-
-    margin:4px 0;
-
+    gap:14px;
+    padding:14px 16px;
     color:#e0f2fe;
-
     text-decoration:none;
-
     border-radius:12px;
-
-    font-size:14px;
-
+    font-size:15px;
     font-weight:500;
-
     transition:all .3s ease;
-
 }
 
-
+.menu-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
 .sidebar-menu a svg{
-
-    width:19px;
-
-    height:19px;
-
-    flex-shrink:0;
-
+    width:20px;
+    height:20px;
 }
-
-
-
 
 
 /* Hover */
 
 .sidebar-menu a:hover{
-
     background:#2563eb;
-
-    color:white;
-
+    color:#fff;
     transform:translateX(5px);
-
 }
 
 
-
-
-
-
-/* Active Menu */
-
+/* Active */
 
 .sidebar-menu a.active{
-
-    background:white;
-
+    background:#fff;
     color:#1e3a8a;
-
-    font-weight:700;
-
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-
+    font-weight:600;
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
 }
-
-
 
 .sidebar-menu a.active svg{
-
     color:#2563eb;
-
 }
 
 
-
-
-
-
 /* =====================================
-   CONTENT AREA SUPPORT
+   CONTENT AREA
 ===================================== */
 
-
 .main-content{
-
     margin-left:280px;
-
-    padding:25px;
-
     min-height:100vh;
-
+    padding:25px;
     background:#f8fafc;
-
 }
-
-
-
 
 
 /* =====================================
-   MOBILE RESPONSIVE
+   TABLET
 ===================================== */
 
-
-@media(max-width:1000px){
-
+@media (max-width:1000px){
 
 .sidebar{
-
     width:240px;
-
 }
-
-
 
 .main-content{
-
     margin-left:240px;
+}
 
 }
 
 
-}
+/* =====================================
+   MOBILE
+===================================== */
 
-
-
-
-
-@media(max-width:768px){
-
+@media (max-width:768px){
 
 .sidebar{
-
     width:220px;
-
     transform:translateX(-100%);
-
-    transition:.3s;
-
+    transition:.3s ease;
 }
-
-
 
 .sidebar.show{
-
     transform:translateX(0);
-
 }
-
-
 
 .main-content{
-
     margin-left:0;
-
 }
 
-
 }
-
-
 
 
 /* =====================================
-   SMALL SCREEN
+   SMALL MOBILE
 ===================================== */
 
-
-@media(max-width:480px){
-
+@media (max-width:480px){
 
 .sidebar{
-
     width:200px;
-
 }
-
-
 
 .sidebar-logo h2{
-
     font-size:18px;
-
 }
 
-
+.sidebar-logo p{
+    font-size:12px;
+}
 
 .sidebar-menu a{
-
+    padding:12px;
     font-size:13px;
-
-    padding:10px;
-
 }
 
+.sidebar-menu a svg{
+    width:18px;
+    height:18px;
+}
 
 }
