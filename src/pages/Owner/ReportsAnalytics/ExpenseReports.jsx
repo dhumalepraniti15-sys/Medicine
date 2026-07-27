@@ -80,54 +80,53 @@ const ExpenseReports = () => {
 
           </thead>
 
-          <tbody>
+         <tbody>
 
-            <tr>
-              <td>Pharmacy</td>
-              <td>₹1,20,000</td>
-              <td>₹1,50,000</td>
-              <td>
-                <span className="status active">
-                  Under Budget
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Medicine Inventory</td>
+    <td>₹1,20,000</td>
+    <td>₹1,50,000</td>
+    <td>
+      <span className="status active">
+        Under Budget
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Laboratory</td>
-              <td>₹90,000</td>
-              <td>₹1,00,000</td>
-              <td>
-                <span className="status active">
-                  Under Budget
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Supplier Payments</td>
+    <td>₹90,000</td>
+    <td>₹1,00,000</td>
+    <td>
+      <span className="status active">
+        Under Budget
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Reception</td>
-              <td>₹65,000</td>
-              <td>₹60,000</td>
-              <td>
-                <span className="status pending">
-                  Over Budget
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Staff Salaries</td>
+    <td>₹65,000</td>
+    <td>₹60,000</td>
+    <td>
+      <span className="status pending">
+        Over Budget
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Administration</td>
-              <td>₹35,000</td>
-              <td>₹40,000</td>
-              <td>
-                <span className="status active">
-                  Under Budget
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Store Maintenance</td>
+    <td>₹35,000</td>
+    <td>₹40,000</td>
+    <td>
+      <span className="status active">
+        Under Budget
+      </span>
+    </td>
+  </tr>
 
-          </tbody>
-
+</tbody>
         </table>
 
       </div>

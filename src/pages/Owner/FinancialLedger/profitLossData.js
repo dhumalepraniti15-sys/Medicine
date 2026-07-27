@@ -31,22 +31,22 @@ icon:"🏆"
 export const revenueData = [
 
 {
-name:"OPD Revenue",
+name:"Prescription Medicine Sales",
 amount:"$300,000"
 },
 
 {
-name:"IPD Revenue",
+name:"OTC Medicine Sales",
 amount:"$250,000"
 },
 
 {
-name:"Pharmacy Revenue",
+name:"Health & Wellness Products",
 amount:"$180,000"
 },
 
 {
-name:"Laboratory Revenue",
+name:"Medical Devices Sales",
 amount:"$120,000"
 }
 
@@ -57,22 +57,22 @@ amount:"$120,000"
 export const expenseAnalysis = [
 
 {
-name:"Staff Salary",
+name:"Pharmacist Salary",
 amount:"$180,000"
 },
 
 {
-name:"Medicines",
+name:"Medicine Stock Purchase",
 amount:"$90,000"
 },
 
 {
-name:"Equipment",
+name:"Medical Supplies",
 amount:"$50,000"
 },
 
 {
-name:"Maintenance",
+name:"Store Maintenance",
 amount:"$30,000"
 }
 

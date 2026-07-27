@@ -9,19 +9,19 @@ const deductions = [
 
 {
 id:1,
-name:"Dr. Rajesh Patil",
-department:"Doctor",
-basicSalary:"₹1,20,000",
-tax:"₹12,000",
-insurance:"₹3,000",
-total:"₹15,000"
+name:"Rohan Patil",
+department:"Chief Pharmacist",
+basicSalary:"₹60,000",
+tax:"₹6,000",
+insurance:"₹2,000",
+total:"₹8,000"
 },
 
 
 {
 id:2,
-name:"Anita Sharma",
-department:"Nurse",
+name:"Priya Sharma",
+department:"Pharmacist",
 basicSalary:"₹45,000",
 tax:"₹4,500",
 insurance:"₹1,500",
@@ -31,8 +31,8 @@ total:"₹6,000"
 
 {
 id:3,
-name:"Rahul Deshmukh",
-department:"Pharmacist",
+name:"Amit Deshmukh",
+department:"Assistant Pharmacist",
 basicSalary:"₹35,000",
 tax:"₹3,500",
 insurance:"₹1,000",
@@ -43,18 +43,18 @@ total:"₹4,500"
 {
 id:4,
 name:"Sneha More",
-department:"Receptionist",
-basicSalary:"₹25,000",
-tax:"₹2,500",
-insurance:"₹800",
-total:"₹3,300"
+department:"Cashier",
+basicSalary:"₹28,000",
+tax:"₹2,800",
+insurance:"₹900",
+total:"₹3,700"
 },
 
 
 {
 id:5,
-name:"Amit Jadhav",
-department:"Lab Technician",
+name:"Rahul Jadhav",
+department:"Inventory Manager",
 basicSalary:"₹40,000",
 tax:"₹4,000",
 insurance:"₹1,200",
@@ -79,7 +79,7 @@ return(
 </h1>
 
 <p>
-Manage employee salary deductions.
+Manage pharmacy employee salary deductions.
 </p>
 
 </div>

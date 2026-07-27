@@ -27,7 +27,7 @@ export const cashTransactions = [
 {
 id:"CF001",
 date:"26 Jul 2026",
-description:"OPD Collection",
+description:"Medicine Sales",
 credit:"$5,000",
 debit:"-",
 balance:"$855,000"
@@ -37,7 +37,7 @@ balance:"$855,000"
 {
 id:"CF002",
 date:"26 Jul 2026",
-description:"Medicine Purchase",
+description:"Medicine Stock Purchase",
 credit:"-",
 debit:"$45,000",
 balance:"$810,000"
@@ -47,7 +47,7 @@ balance:"$810,000"
 {
 id:"CF003",
 date:"25 Jul 2026",
-description:"Insurance Payment",
+description:"Supplier Refund",
 credit:"$35,000",
 debit:"-",
 balance:"$845,000"
@@ -57,7 +57,7 @@ balance:"$845,000"
 {
 id:"CF004",
 date:"24 Jul 2026",
-description:"Staff Salary",
+description:"Pharmacist Salary",
 credit:"-",
 debit:"$80,000",
 balance:"$765,000"

@@ -9,10 +9,10 @@ const employees = [
 
 {
 id:1,
-name:"Dr. Rahul Patil",
-department:"Cardiology",
-designation:"Senior Doctor",
-salary:"₹1,20,000",
+name:"Rohan Patil",
+department:"Pharmacy",
+designation:"Chief Pharmacist",
+salary:"₹60,000",
 joining:"12 Jan 2022",
 paymentDate:"28 July 2026",
 status:"Paid"
@@ -21,9 +21,9 @@ status:"Paid"
 
 {
 id:2,
-name:"Sneha Sharma",
-department:"Nursing",
-designation:"Staff Nurse",
+name:"Priya Sharma",
+department:"Pharmacy",
+designation:"Senior Pharmacist",
 salary:"₹45,000",
 joining:"05 March 2023",
 paymentDate:"28 July 2026",
@@ -35,7 +35,7 @@ status:"Paid"
 id:3,
 name:"Amit More",
 department:"Pharmacy",
-designation:"Pharmacist",
+designation:"Assistant Pharmacist",
 salary:"₹35,000",
 joining:"18 June 2024",
 paymentDate:"Pending",
@@ -45,10 +45,10 @@ status:"Pending"
 
 {
 id:4,
-name:"Priya Joshi",
-department:"Reception",
-designation:"Receptionist",
-salary:"₹25,000",
+name:"Sneha Joshi",
+department:"Sales",
+designation:"Cashier",
+salary:"₹28,000",
 joining:"20 Aug 2023",
 paymentDate:"28 July 2026",
 status:"Paid"
@@ -57,10 +57,10 @@ status:"Paid"
 
 {
 id:5,
-name:"Dr. Neha Kulkarni",
-department:"General Medicine",
-designation:"Doctor",
-salary:"₹90,000",
+name:"Rahul Kulkarni",
+department:"Inventory",
+designation:"Inventory Manager",
+salary:"₹50,000",
 joining:"10 Feb 2021",
 paymentDate:"28 July 2026",
 status:"Paid"
@@ -69,9 +69,9 @@ status:"Paid"
 
 {
 id:6,
-name:"Rajesh More",
-department:"Laboratory",
-designation:"Lab Technician",
+name:"Kavita More",
+department:"Store",
+designation:"Store Keeper",
 salary:"₹30,000",
 joining:"15 May 2024",
 paymentDate:"Pending",
@@ -81,15 +81,14 @@ status:"Pending"
 
 {
 id:7,
-name:"Kavita Patil",
+name:"Anjali Patil",
 department:"Administration",
-designation:"HR Manager",
+designation:"Accounts Manager",
 salary:"₹55,000",
 joining:"01 Dec 2022",
 paymentDate:"28 July 2026",
 status:"Paid"
 }
-
 
 ];
 
@@ -101,12 +100,12 @@ return(
 
 
 <h1>
-👨‍⚕️ Employee Salary
+💊 Employee Salary
 </h1>
 
 
 <p>
-Manage employee salaries and payment details.
+Manage pharmacy employee salaries and payment details.
 </p>
 
 
@@ -167,7 +166,7 @@ employees.map((emp)=>(
 
 <td>
 
-<span 
+<span
 className={
 emp.status==="Paid"
 ?

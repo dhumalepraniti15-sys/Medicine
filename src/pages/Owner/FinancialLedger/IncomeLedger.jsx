@@ -8,61 +8,61 @@ const incomeData = [
 
 {
 date:"26 July 2026",
-source:"Patient Billing",
+source:"Medicine Sales",
 amount:"$5000"
 },
 
 {
 date:"27 July 2026",
-source:"Pharmacy Sales",
+source:"Prescription Medicines",
 amount:"$2500"
 },
 
 {
 date:"28 July 2026",
-source:"Laboratory Services",
+source:"OTC Medicines",
 amount:"$3200"
 },
 
 {
 date:"29 July 2026",
-source:"OPD Consultation",
+source:"Health Supplements",
 amount:"$1800"
 },
 
 {
 date:"30 July 2026",
-source:"Insurance Claims",
+source:"Medical Devices Sales",
 amount:"$4500"
 },
 
 {
 date:"31 July 2026",
-source:"Surgery Charges",
+source:"Personal Care Products",
 amount:"$12000"
 },
 
 {
 date:"01 August 2026",
-source:"Room Charges",
+source:"Baby Care Products",
 amount:"$6500"
 },
 
 {
 date:"02 August 2026",
-source:"Emergency Services",
+source:"Diabetic Care Products",
 amount:"$3500"
 },
 
 {
 date:"03 August 2026",
-source:"Health Checkup Packages",
+source:"First Aid Products",
 amount:"$2200"
 },
 
 {
 date:"04 August 2026",
-source:"Medical Equipment Sales",
+source:"Home Delivery Orders",
 amount:"$4000"
 }
 
@@ -97,7 +97,7 @@ return(
 
 
 <p>
-Hospital income transactions details
+Pharmacy income transactions details
 </p>
 
 

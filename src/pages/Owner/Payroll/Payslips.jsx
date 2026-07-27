@@ -9,18 +9,18 @@ const payslipData = [
 
 {
 id:1,
-employee:"Dr. Rahul Sharma",
-department:"Cardiology",
+employee:"Rohan Patil",
+department:"Chief Pharmacist",
 month:"July 2026",
-salary:"₹1,20,000",
+salary:"₹60,000",
 status:"Paid"
 },
 
 
 {
 id:2,
-employee:"Nikita Patil",
-department:"Pharmacy",
+employee:"Priya Sharma",
+department:"Pharmacist",
 month:"July 2026",
 salary:"₹45,000",
 status:"Paid"
@@ -30,27 +30,27 @@ status:"Paid"
 {
 id:3,
 employee:"Amit Deshmukh",
-department:"Administration",
+department:"Assistant Pharmacist",
 month:"July 2026",
-salary:"₹60,000",
+salary:"₹35,000",
 status:"Pending"
 },
 
 
 {
 id:4,
-employee:"Priya More",
-department:"Nursing",
+employee:"Sneha More",
+department:"Cashier",
 month:"July 2026",
-salary:"₹55,000",
+salary:"₹28,000",
 status:"Paid"
 },
 
 
 {
 id:5,
-employee:"Sanjay Jadhav",
-department:"Laboratory",
+employee:"Rahul Jadhav",
+department:"Inventory Manager",
 month:"July 2026",
 salary:"₹40,000",
 status:"Pending"
@@ -74,7 +74,7 @@ return (
 </h1>
 
 <p>
-Manage employee monthly payslips and salary records.
+Manage pharmacy employee monthly payslips and salary records.
 </p>
 
 </div>
@@ -151,7 +151,7 @@ payslipData.map((item)=>(
 
 <td>
 
-<span 
+<span
 className={
 item.status==="Paid"
 ?
@@ -171,7 +171,7 @@ item.status==="Paid"
 
 <td>
 
-<button 
+<button
 className="view-btn"
 onClick={()=>alert(`Downloading Payslip of ${item.employee}`)}
 >

@@ -9,38 +9,47 @@ const bonusData = [
 
 {
 id:1,
-employee:"Dr. Rahul Sharma",
-department:"Cardiology",
+employee:"Rohan Patil",
+department:"Chief Pharmacist",
 bonusType:"Performance Bonus",
-amount:"₹50,000",
+amount:"₹30,000",
 date:"26 July 2026"
 },
 
 {
 id:2,
-employee:"Nikita Patil",
-department:"Pharmacy",
+employee:"Priya Sharma",
+department:"Pharmacist",
 bonusType:"Festival Bonus",
-amount:"₹25,000",
+amount:"₹20,000",
 date:"28 July 2026"
 },
 
 {
 id:3,
 employee:"Amit Deshmukh",
-department:"Administration",
+department:"Assistant Pharmacist",
 bonusType:"Annual Bonus",
-amount:"₹40,000",
+amount:"₹18,000",
 date:"30 July 2026"
 },
 
 {
 id:4,
-employee:"Priya More",
-department:"Nursing",
-bonusType:"Extra Duty Bonus",
-amount:"₹15,000",
+employee:"Sneha More",
+department:"Cashier",
+bonusType:"Attendance Bonus",
+amount:"₹12,000",
 date:"02 August 2026"
+},
+
+{
+id:5,
+employee:"Rahul Jadhav",
+department:"Inventory Manager",
+bonusType:"Inventory Performance Bonus",
+amount:"₹25,000",
+date:"04 August 2026"
 }
 
 ];
@@ -59,7 +68,7 @@ return (
 </h1>
 
 <p>
-Manage employee bonus payments and incentives.
+Manage pharmacy employee bonus payments and incentives.
 </p>
 
 </div>

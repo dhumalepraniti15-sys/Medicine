@@ -8,24 +8,24 @@ const employees = [
 
 {
 id:1,
-name:"Dr. Rajesh Patil",
-department:"Doctor",
-salary:"₹1,20,000",
+name:"Rohan Patil",
+department:"Chief Pharmacist",
+salary:"₹60,000",
 status:"Paid"
 },
 
 {
 id:2,
-name:"Anita Sharma",
-department:"Nurse",
+name:"Priya Sharma",
+department:"Pharmacist",
 salary:"₹45,000",
 status:"Paid"
 },
 
 {
 id:3,
-name:"Rahul Deshmukh",
-department:"Pharmacist",
+name:"Amit Deshmukh",
+department:"Assistant Pharmacist",
 salary:"₹35,000",
 status:"Pending"
 },
@@ -33,15 +33,15 @@ status:"Pending"
 {
 id:4,
 name:"Sneha More",
-department:"Receptionist",
-salary:"₹25,000",
+department:"Cashier",
+salary:"₹28,000",
 status:"Paid"
 },
 
 {
 id:5,
-name:"Amit Jadhav",
-department:"Lab Technician",
+name:"Rahul Jadhav",
+department:"Inventory Manager",
 salary:"₹40,000",
 status:"Pending"
 }
@@ -57,11 +57,11 @@ return(
 <div className="payroll-header">
 
 <h1>
-👨‍⚕️ Employee Salary
+💊 Employee Salary
 </h1>
 
 <p>
-Manage employee salaries and payment details.
+Manage pharmacy employee salaries and payment details.
 </p>
 
 </div>
@@ -135,7 +135,7 @@ employees.map((emp)=>(
 
 <td>
 
-<span 
+<span
 className={
 emp.status==="Paid"
 ?

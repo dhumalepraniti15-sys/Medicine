@@ -78,54 +78,53 @@ const RevenueReports = () => {
             </tr>
 
           </thead>
+<tbody>
 
-          <tbody>
+  <tr>
+    <td>Prescription Medicines</td>
+    <td>₹8,40,000</td>
+    <td>+12%</td>
+    <td>
+      <span className="status active">
+        Excellent
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Consultation</td>
-              <td>₹8,40,000</td>
-              <td>+12%</td>
-              <td>
-                <span className="status active">
-                  Excellent
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>OTC Medicines</td>
+    <td>₹6,20,000</td>
+    <td>+8%</td>
+    <td>
+      <span className="status active">
+        Good
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Pharmacy</td>
-              <td>₹6,20,000</td>
-              <td>+8%</td>
-              <td>
-                <span className="status active">
-                  Good
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Health & Wellness Products</td>
+    <td>₹4,80,000</td>
+    <td>+15%</td>
+    <td>
+      <span className="status active">
+        Excellent
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Laboratory</td>
-              <td>₹4,80,000</td>
-              <td>+15%</td>
-              <td>
-                <span className="status active">
-                  Excellent
-                </span>
-              </td>
-            </tr>
+  <tr>
+    <td>Medical Devices</td>
+    <td>₹3,10,000</td>
+    <td>+5%</td>
+    <td>
+      <span className="status pending">
+        Average
+      </span>
+    </td>
+  </tr>
 
-            <tr>
-              <td>Radiology</td>
-              <td>₹3,10,000</td>
-              <td>+5%</td>
-              <td>
-                <span className="status pending">
-                  Average
-                </span>
-              </td>
-            </tr>
-
-          </tbody>
+</tbody>
 
         </table>
 

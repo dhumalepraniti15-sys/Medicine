@@ -1,13 +1,13 @@
 import React from "react";
 
-const FinancialCard = ({icon,title,value}) => {
+const FinancialCard = ({ icon: Icon, title, value }) => {
 
 return (
 
 <div className="financial-card">
 
 <div className="card-icon">
-{icon}
+<Icon size={22} />
 </div>
 
 <div>

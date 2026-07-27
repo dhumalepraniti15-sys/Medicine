@@ -10,7 +10,7 @@ const CompanyProfile = () => {
         <Building2 size={24} />
         <div>
           <h2>Company Profile</h2>
-          <p>Manage hospital information</p>
+          <p>Manage pharmacy information</p>
         </div>
       </div>
 
@@ -18,7 +18,7 @@ const CompanyProfile = () => {
 
         <img
           src={companyProfile.logo}
-          alt="Hospital Logo"
+          alt="Pharmacy Logo"
           className="company-logo"
         />
 
@@ -32,10 +32,10 @@ const CompanyProfile = () => {
       <div className="settings-grid">
 
         <div className="form-group">
-          <label>Hospital Name</label>
+          <label>Pharmacy Name</label>
           <input
             type="text"
-            defaultValue={companyProfile.hospitalName}
+            defaultValue={companyProfile.pharmacyName}
           />
         </div>
 
@@ -80,15 +80,15 @@ const CompanyProfile = () => {
         </div>
 
         <div className="form-group">
-          <label>Registration Number</label>
+          <label>License Number</label>
           <input
             type="text"
-            defaultValue={companyProfile.registrationNumber}
+            defaultValue={companyProfile.licenseNumber}
           />
         </div>
 
         <div className="form-group full-width">
-          <label>Hospital Address</label>
+          <label>Pharmacy Address</label>
 
           <textarea
             rows="4"
